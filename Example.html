@@ -1,0 +1,54 @@
+<section class="showcase">
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/pexels-photo-9034975.webp" alt=""></div>
+              <div class="swiper-slide"><img src="images/pexels-rodnae-productions-7821936.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/pexels-photo-9034975.webp" alt=""></div>
+              <div class="swiper-slide"><img src="images/pexels-photo-9034975.webp" alt=""></div>
+              
+            </div>
+            <!-- If we need pagination -->
+              
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    
+    <!-- <div class="intro"> -->
+        <!-- <h2>Welcome to the New Level of Consultancy</h2> -->
+    <!-- </div> -->
+</section>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+// Optional parameters
+autoplay:{
+  delay: 3000,
+  disableOnInteraction: false,
+},
+
+loop: true,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable:true,
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
